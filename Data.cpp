@@ -7,10 +7,11 @@ void Data::request(){
 	setlocale(LC_ALL, "");
 	std::cout << "  Нажмите нужную клавишу:" << std::endl;
 	setlocale(0, "C");
+	std::cout << " ============================\n";
+
 }
 
 void Data::data_enter(){
-	std::cout << " ============================\n";
 	std::cout << " |  ";
 	_simbol = _getch();
 	switch(_simbol)	{
@@ -40,6 +41,7 @@ void Data::data_enter(){
 		--_space;
 	}
 	std::cout << print_code() << "  |";
+	std::cout << "\n ============================";
 	_space = 10;
 }
 
